@@ -1,15 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Testimonial Page by Juan Antonio</title>
     <script defer type="module" src="./js/main.js"></script>
 </head>
+
 <body>
-    <main>
-        <h1>Testimonial Page by Juan Antonio</h1>
+    <main class="page">
+        <section class="item-flex">
+            <article class="reviewers">
+                <header class="img-review">
+                    <img class="star-ligth" src="./images/Star_fill_gray.svg"
+                    alt="Gooogle Testimonial" />
+                </header>
+                <section>
+                    <h2 class="title">Reviewers</h2>
+                    <p class="text-body">
+                        Reviewers is where people can access guidelines, 
+                        checklists, and other tools to assist them in reviewing papers or manuscripts. 
+                        It provides a structured approach to ensure that the review process is thorough, 
+                        efficient, and consistent.
+                    </p>
+                </section>
+                <footer>
+                    <section>
+                        <jv-check-icon text="Checklist to Review an Academic Paper"></jv-check-icon>
+                        <jv-check-icon text="Peer Review Checklist"></jv-check-icon>
+                        <jv-check-icon text="Checklist for Editors, Reviewers, and Authors of SPIE Journals"></jv-check-icon>
+                    </section>
+                </footer>
+            </article>
+        </section>
+        <section class="item-flex container-cards">
+            <jv-card title="Samantha Lee" description="The checklist ensures that the review process is thorough">
+                <img slot="image-card" class="img-google" src="./images/google-testimonial.png"
+                    alt="Gooogle Testimonial" />
+            </jv-card>
+            <jv-card title="Rachel Patel" description="I highly recommend the Writecream Business Description">
+                <img slot="image-card" class="img-google" src="./images/meta-testimonial.png"
+                    alt="Gooogle Testimonial" />
+            </jv-card>
+            
+        </section>
+       
     </main>
 </body>
+
 </html>
