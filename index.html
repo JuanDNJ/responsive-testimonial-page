@@ -13,28 +13,21 @@
 <body>
     <main class="page">
         <section class="item-flex">
-            <article class="reviewers">
-                <header class="img-review">
-                    <img class="star-ligth" src="./images/Star_fill_gray.svg"
-                    alt="Gooogle Testimonial" />
-                </header>
-                <section>
-                    <h2 class="title">Reviewers</h2>
-                    <p class="text-body">
-                        Reviewers is where people can access guidelines, 
-                        checklists, and other tools to assist them in reviewing papers or manuscripts. 
-                        It provides a structured approach to ensure that the review process is thorough, 
-                        efficient, and consistent.
-                    </p>
+            <jv-reviewers>
+                <img slot="star-image" class="star-ligth" src="./images/Star_fill_gray.svg" alt="Gooogle Testimonial" />
+                <h2 slot="title" class="title">Reviewers</h2>
+                <p class="paragraf" slot="description">
+                    Reviewers is where people can access guidelines,
+                    checklists, and other tools to assist them in reviewing papers or manuscripts.
+                    It provides a structured approach to ensure that the review process is thorough,
+                    efficient, and consistent.
+                </p>
+                <section slot="icons" class="container-icons">
+                    <jv-check-icon text="Checklist to Review an Academic Paper"></jv-check-icon>
+                    <jv-check-icon text="Peer Review Checklist"></jv-check-icon>
+                    <jv-check-icon text="Checklist for Editors, Reviewers, and Authors of SPIE Journals"></jv-check-icon>
                 </section>
-                <footer>
-                    <section>
-                        <jv-check-icon text="Checklist to Review an Academic Paper"></jv-check-icon>
-                        <jv-check-icon text="Peer Review Checklist"></jv-check-icon>
-                        <jv-check-icon text="Checklist for Editors, Reviewers, and Authors of SPIE Journals"></jv-check-icon>
-                    </section>
-                </footer>
-            </article>
+            </jv-reviewers>
         </section>
         <section class="item-flex container-cards">
             <jv-card title="Samantha Lee" description="The checklist ensures that the review process is thorough">
@@ -45,48 +38,8 @@
                 <img slot="image-card" class="img-google" src="./images/meta-testimonial.png"
                     alt="Gooogle Testimonial" />
             </jv-card>
-            <!-- <jv-card title="Samantha Lee" description="The checklist ensures that the review process is thorough">
-                <img slot="image-card" class="img-google" src="./images/google-testimonial.png"
-                    alt="Gooogle Testimonial" />
-            </jv-card>
-            <jv-card title="Rachel Patel" description="I highly recommend the Writecream Business Description">
-                <img slot="image-card" class="img-google" src="./images/meta-testimonial.png"
-                    alt="Gooogle Testimonial" />
-            </jv-card>
-            <jv-card title="Samantha Lee" description="The checklist ensures that the review process is thorough">
-                <img slot="image-card" class="img-google" src="./images/google-testimonial.png"
-                    alt="Gooogle Testimonial" />
-            </jv-card>
-            <jv-card title="Rachel Patel" description="I highly recommend the Writecream Business Description">
-                <img slot="image-card" class="img-google" src="./images/meta-testimonial.png"
-                    alt="Gooogle Testimonial" />
-            </jv-card>
-            <jv-card title="Samantha Lee" description="The checklist ensures that the review process is thorough">
-                <img slot="image-card" class="img-google" src="./images/google-testimonial.png"
-                    alt="Gooogle Testimonial" />
-            </jv-card>
-            <jv-card title="Rachel Patel" description="I highly recommend the Writecream Business Description">
-                <img slot="image-card" class="img-google" src="./images/meta-testimonial.png"
-                    alt="Gooogle Testimonial" />
-            </jv-card>
-            <jv-card title="Samantha Lee" description="The checklist ensures that the review process is thorough">
-                <img slot="image-card" class="img-google" src="./images/google-testimonial.png"
-                    alt="Gooogle Testimonial" />
-            </jv-card>
-            <jv-card title="Rachel Patel" description="I highly recommend the Writecream Business Description">
-                <img slot="image-card" class="img-google" src="./images/meta-testimonial.png"
-                    alt="Gooogle Testimonial" />
-            </jv-card>
-            <jv-card title="Samantha Lee" description="The checklist ensures that the review process is thorough">
-                <img slot="image-card" class="img-google" src="./images/google-testimonial.png"
-                    alt="Gooogle Testimonial" />
-            </jv-card>
-            <jv-card title="Rachel Patel" description="I highly recommend the Writecream Business Description">
-                <img slot="image-card" class="img-google" src="./images/meta-testimonial.png"
-                    alt="Gooogle Testimonial" />
-            </jv-card> -->
         </section>
-       
+
     </main>
 </body>
 

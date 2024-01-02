@@ -11,21 +11,28 @@ export default class Card extends HTMLElement {
             :root{
                 display: block;
                 width: 100%;
-                
             }
             .card{
                 display: flex;
                 flex-direction: column;
                 background: #fff;
-              
+                color: #52525A;
                 max-width: 325px;
                 box-shadow: 0px 0px 10px 0px rgba(60, 60, 61, 0.1);
                 margin: 20px;
                 border-radius: 20px;
                 padding: 1rem 2rem;
             }
+            .card:nth-child(odd){
+                align-self: flex-end;
+            }
+            .card:nth-child(even){
+                align-self: flex-start;
+               
+            }
             .card p{
                 font-size: 1rem;
+               
             }
             .title-card{
                 font-size: 1rem;

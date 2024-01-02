@@ -1,25 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
-*,*::before, *::after{
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 10px;
-    /* background-color: rgb(0, 0, 0); */
 }
-::-webkit-scrollbar-button{
-    
+
+::-webkit-scrollbar-button {
     background-color: rgb(255, 255, 255);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: rgba(199, 199, 199, 0.534);
 }
-html, body {
+
+html,
+body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #52525A;
 }
-body{
+
+body {
     display: grid;
     place-content: top center;
     min-height: 100vh;
@@ -28,43 +34,39 @@ body{
     background-color: #D4D4D8;
     font-family: 'Sora', sans-serif;
 }
-p{
-    font-size: 1.8rem;
+
+p {
     padding: 1rem 0;
 }
-img{
+
+img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 main {
     max-width: 1280px;
     margin: 82px auto;
 }
-.page{
+
+.page {
     display: flex;
     gap: 40px;
     padding: 0 41px;
     place-items: center;
     background-color: #FAFAF9;
 }
-.title{
-    font-size: 2.25rem;
-    font-family: 'Sora', sans-serif;
-    color: #18181B;
-}
-.text-body{
-    font-size: 1.25rem;
-    line-height: 2rem;
-}
-.item-flex{
-    flex: 1 ;
+
+.item-flex {
+    flex: 1;
     height: 100%;
     display: flex;
     place-content: center;
     /* background-color: rgb(255, 255, 255); */
 }
-.item-flex.container-cards{
+
+.item-flex.container-cards {
     display: flex;
     flex-direction: column;
     place-items: center;
@@ -73,19 +75,8 @@ main {
     overflow: hidden auto;
     /* background-color: rgb(192, 47, 47); */
 }
-jv-card img{
-    width: 96px;
-}
-jv-card:nth-child(odd){
-    align-self: flex-end;
- 
-}
-jv-card:nth-child(even){
-    align-self: flex-start;
-   
-}
 
-.star-ligth{
+.star-ligth {
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -93,24 +84,21 @@ jv-card:nth-child(even){
     background-color: gold;
     align-self: flex-start;
 }
+
 .star-ligth:hover {
     transform: rotate(360deg);
 }
-.reviewers{
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-    padding: 0 2rem;
- 
-  
+
+jv-card img {
+    width: 96px;
 }
-.reviewers .img-review{
-    display: flex;
-    place-items: center;
-    padding: 1rem 0;
+
+jv-card:nth-child(odd) {
+    align-self: flex-end;
+
 }
-.reviewers footer section{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+
+jv-card:nth-child(even) {
+    align-self: flex-start;
+
 }
