@@ -45,6 +45,7 @@ main {
     display: flex;
     gap: 40px;
     padding: 0 41px;
+    place-items: center;
     background-color: #FAFAF9;
 }
 .title{
@@ -68,6 +69,7 @@ main {
     flex-direction: column;
     place-items: center;
     gap: 2rem;
+    height: 60vh;
     overflow: hidden auto;
     /* background-color: rgb(192, 47, 47); */
 }
