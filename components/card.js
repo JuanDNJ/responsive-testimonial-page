@@ -23,6 +23,12 @@ export default class Card extends HTMLElement {
                 border-radius: 20px;
                 padding: 1rem 2rem;
             }
+            .header{
+                display: flex;
+                align-items: flex-end;
+                place-content: start;
+                gap: 1rem;
+            }
             .card:nth-child(odd){
                 align-self: flex-end;
             }
@@ -38,6 +44,10 @@ export default class Card extends HTMLElement {
                 font-size: 1rem;
                 color: #18181B;
             }
+            .container-stars{
+                display: flex;
+                place-content: center;
+            }
             ::slotted(.img-google){
                 width: 100%;
                 height: 100%;
@@ -46,12 +56,40 @@ export default class Card extends HTMLElement {
             
         `;
     }
+    renderStars() {
+        let numStars = 5
+        let stars = [];
+        for (let i = 0; i < numStars; i++) {
+            stars = [...stars, {
+                id: i + 1,
+                fill: "#D4D4D8",
+                stroke: "#D4D4D8"
+            }]
+        }
+        const newStars = stars.map((star) => {
+            if (this.getAttribute('stars')) {
+                let parseNumStars = parseInt(this.getAttribute('stars').trim());
+                if (star.id <= parseNumStars) {
+                    star.fill = "#F5C044"
+                    star.stroke = "#F5C044"
+                    return star
+                }
+            }
+            return star
+        })
+        return newStars;
+
+    }
     render() {
+        const stars = this.renderStars()
         this.shadowRoot.innerHTML = /*HTML */ `
            <style>${Card.styles}</style>
            <article class="card">
-                <header>
+                <header class="header">
                     <slot name="image-card"></slot>
+                    <section class="container-stars">
+                    ${stars.map(star => `<jv-start fill="${star.fill}" stroke="${star.stroke}"></jv-start>`).join('')}
+                    </section>
                 </header>
                 <section>
                     <h2 class="title-card">${this.getAttribute('title')}</h2>
